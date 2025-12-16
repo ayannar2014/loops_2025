@@ -2,29 +2,40 @@
 # While loops  
 # for loops=execute a block of code a fixed number of times. 
 #u iterate over a range, string, sequence, etc. 
-# for x in range(1,11,3):
-#     print(x)
 
-# print("Happy New Year!")
+for x in range (1, 23):
+    if x == 13:
+        break #once you reach 13 you escape the loop
+    else:
+        print (x)
 
-# credit_card = "1234-5678-9012-3456"
-# for x in credit_card:
-#     print(x)
-
-# for x in range (1,21): 
-#     if x==13:
-#         break #break will mat it stop at 13...continue will make it skip 13 but continue after
-#     else: 
-#         print(x) 
+for x in range (1,11,2): #prints 1(inclusive) to 11(exclusive) and counts by 2s
+    print (x)
 
 #WILDLOOPS
 #execute code WHILE some conditions remain true
 
-# name = input("Enter your name:") 
+#while loop is execute some code while some condition remains true
+#IF ELSE
+name = input ("Enter your name")
 
-# while name == "": 
-#     print("You did not enter your name.")
+if name == "":
+    print ("You did not enter your name")
+else: 
+    print (f"Hello {name}")
 
-#     name = input("Enter your name:") 
+    name = input ("Enter your name")
 
-# print("Hello {name}") 
+# #WHILE ELSE//infinitly asks you your name
+name = input ("Enter your name")
+while name == "":
+    print ("You did not enter your name")
+    name = input ("Enter your name")
+else: 
+    print (f"Hello {name}")
+
+name = input ("Enter your name")
+while name == "":
+    print ("You did not enter your name")
+
+print (f"Hello {name}") #infinite and does not stop
